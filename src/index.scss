@@ -1,0 +1,470 @@
+$blueColor: #4ECDC4;
+$primaryColor: #342E37;
+$bg-color: #424242;
+$hl-color: #2196F3;
+$muted-color: mix(white, $bg-color, 70%);
+$trans-time: 300ms;
+$width: 320px;
+$text-color: #F7FFF7;
+$text-color2: rgba(255, 255, 255, 0.7);
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  flex-wrap: inherit;
+  margin: 10px 0px 10px 0%;
+  width: calc(100% * (1/5) - 0px - 15px);
+  justify-content: center;
+}
+
+i {
+  width: -0.25em !important;
+  margin-right: 1em;
+}
+
+html {
+  background-color: $primaryColor;
+}
+#root {
+  background: $primaryColor;
+}
+
+.App, .Home {
+  background: $primaryColor;
+  width: 100%;
+}
+
+.img-header {
+  padding-right: 5%;
+}
+
+.search-results-div {
+  display: flex;
+  justify-content: center;
+  background: $primaryColor;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.header-item-image {
+  width: 100%;
+
+}
+
+.header-image, .header-item-image {
+  object-fit: cover;
+  width: 95vw;
+  height: 80vh;
+  opacity: 0.5;
+  flex: 1;
+  object-fit: cover;
+  border-radius: 25px;
+  -moz-box-shadow: 5px 5px 50px 5px #000000;
+  -webkit-box-shadow: 5px 5px 50px 5px #000000; 
+  box-shadow: 5px 5px 50px 5px #000000;
+  // background: rgb(0,0,0);
+  // background: linear-gradient(55deg, rgba(0,0,0,1) 0%, rgba(46,43,43,1) 24%, rgba(241,242,242,1) 100%);
+}
+
+.slick-slider {
+  height: 100% !important;
+}
+
+.slick-list {
+  height: 100% !important;
+}
+
+.BrainHubCarousel {
+  overflow: hidden;
+  height: auto;
+}
+
+.now-playing {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  color: $text-color;
+  font-family: 'Roboto', cursive;
+}
+.header-images {
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+  object-fit: cover;
+  
+}
+
+.movie-details, .item-details-main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item-header-image {
+  object-fit: cover;
+  flex-direction: column;
+}
+
+
+.item-details-hero-backdrop {
+  height: 90vh;
+  object-fit: cover;
+  width: 100%;
+  -moz-box-shadow: 5px 5px 50px 5px #000000;
+  -webkit-box-shadow: 5px 5px 50px 5px #000000; 
+  box-shadow: 5px 5px 50px 5px #000000;
+  opacity: 0.5;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0.45) 92%) center center no-repeat, center top no-repeat rgb(255, 255, 255);
+}
+.item-details-hero-backdrop:hover:before,
+.item-details-hero-backdrop:focus:before {
+  background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+      mix-blend-mode: overlay;
+}
+
+
+
+.item-details-hero-info {
+  display: flex;
+  position: absolute;
+  color: $text-color;
+  padding-left: 2em;
+  margin-top: 4em;
+}
+
+.item-details-hero-info-title {
+  width: 55%;
+}
+
+#back-button {
+  font-size: 2em;
+  position: absolute;
+  top: -3em;
+  color: $text-color;
+}
+
+.movie-cast-name {
+  text-align: center;
+  color: $text-color2;
+}
+
+.item-details-hero-info-poster {
+  border-radius: 25px;
+  -moz-box-shadow: 5px 5px 50px 5px #000000;
+  -webkit-box-shadow: 5px 5px 50px 5px #000000; 
+  box-shadow: 5px 5px 50px 5px #000000;
+}
+.item-details {
+  display: flex;
+}
+.header-item-name {
+  position: absolute;
+  top: 38%;
+  left: 23%;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.item-details-overview {
+  padding-left: 7%;
+  padding-right: 7%;
+  color: $text-color2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.16;
+  line-height: 1.5;
+}
+
+.item-details-body {
+  padding-left: 7%;
+  padding-right: 7%;
+  color: $text-color;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title, .item-name {
+  position: absolute;
+  top: 32%;
+  left: 7%;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-details {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    width: 30%;
+    color: $text-color;
+    font-family: 'Roboto', sans-serif;
+    // text-shadow: -1px -1px 0 #3d3d3d, 1px -1px 0 #3d3d3d, -1px 1px 0 #3d3d3d, 1px 1px 0 #3d3d3d;
+}
+
+.BrainHubCarouselItem BrainhubCarouselItem--active {
+background: rgb(0,0,0);
+background: -moz-linear-gradient(93deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(93deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+background: linear-gradient(93deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+}
+
+.search-results-name,
+.search-results-title {
+  align-self: baseline;
+  text-align: center;
+  color: $text-color;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.search-results-title {
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-rated-header {
+  color: $text-color;
+  margin-left: 1em;
+}
+
+.top-movie-results-poster{
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+}
+
+.BrainhubCarousel__arrows {
+  padding: 45px !important;
+  background:rgba(0,0,0,0.01) !important;
+  background-color: none !important;
+}
+
+.search-results-poster {
+  max-height: 190px;
+  width: 130px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+}
+.rating {
+  position: absolute;
+  padding: 3px;
+  opacity: 0.8;
+  color: $text-color;
+  text-decoration: none;
+  background: $bg-color;
+  text-align: center;
+}
+
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+    color: yellow;
+}
+
+.search-bar {
+  background: none;
+  color: $text-color;
+  font-size: 18px;
+  padding: 20px 10px 15px 1px;
+  display: block;
+  width: $width;
+  height: 45px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $blueColor;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label,
+  &:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: $blueColor;
+  }
+  &:focus ~ .bar:before {
+    width: $width;
+  }
+}
+
+.item-details-hero-info-details {
+  flex-direction: column;
+  padding-left: 1em;
+}
+
+.item-details-hero-genre {
+  flex-direction: row;
+}
+
+.movie-trailer-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  .item-details-hero-info {
+    padding-left: 1em;
+  }
+
+  .movie-details-trailer {
+    display: none;
+  }
+
+  .BrainhubCarouselItem--active {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    min-width: 100px !important;
+    max-width: 100px !important;
+  }
+
+  .BrainhubCarouselItem{
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    min-width: 100px !important;
+    max-width: 100px !important;
+  }
+
+  .top-movie-results-poster {
+    width: 70px;
+  }
+
+  .BrainhubCarousel__arrows {
+    padding: 15px !important;
+    background:rgba(0,0,0,0.01) !important;
+    background-color: none !important;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  .header-details {
+    display: none;
+  }
+
+  .header-images {
+    display: none;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: inherit;
+    margin: 20px 0px 20px 0%;
+    width: calc(100% * (1/2) - 0px - 15px);
+    justify-content: center;
+  }
+
+  .search-results-poster {
+    width: 6em;
+  }
+
+  
+  .item-details-hero-info {
+    padding-left: 1em;
+  }
+
+  .movie-details-trailer {
+    display: none;
+  }
+
+  .item-details-hero-info-poster {
+    width: 7em;
+    height: 10em;
+    margin-top: 1.5em;
+  }
+
+  .BrainhubCarouselItem--active {
+    padding-left: 2.5px !important;
+    padding-right: 2.5px!important;
+    min-width: 100px !important;
+    max-width: 100px !important;
+  }
+
+  .BrainhubCarouselItem{
+    padding-left: 2.5px !important;
+    padding-right: 2.5px!important;
+    max-width: 100px !important;
+    min-width: 100px !important;
+  }
+
+  .BrainhubCarousel__arrows {
+    padding: 15px !important;
+    background:rgba(0,0,0,0.01) !important;
+    background-color: none !important;
+  }
+
+  .top-movie-results-poster {
+    width: 5em;
+  }
+
+  .tests {
+    width: 100px;
+  }
+  
+}

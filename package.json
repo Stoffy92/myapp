@@ -1,0 +1,51 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://stoffy92.github.io/myapp",
+  "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.11",
+    "axios": "^0.18.0",
+    "node-sass": "^4.10.0",
+    "nuka-carousel": "^4.4.3",
+    "pure-react-carousel": "^1.17.0",
+    "react": "^16.6.3",
+    "react-carousel-slider": "^2.0.13",
+    "react-dom": "^16.6.3",
+    "react-ratings-declarative": "^3.4.1",
+    "react-responsive-carousel": "^3.1.45",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-slick": "^0.23.2",
+    "react-slick-carousel": "^0.14.9",
+    "react-star-rating": "^1.4.2",
+    "react-star-rating-component": "^1.4.1",
+    "react-star-ratings": "^2.3.0",
+    "react-toggle-display": "^2.2.0",
+    "slick-carousel": "^1.8.1",
+    "standard": "^12.0.1",
+    "swiper": "^4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "javascript.validate.enable": false
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "gh-pages": "^2.0.1",
+    "react-alice-carousel": "^1.13.0"
+  }
+}
