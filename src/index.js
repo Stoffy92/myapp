@@ -8,7 +8,7 @@ import createHashHistory from 'history/createHashHistory';
 import { BrowserRouter, browserHistory } from 'react-router-dom';
 
 
-const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
+const browserHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
 ReactDOM.render(
   <BrowserRouter history={browserHistory}>
