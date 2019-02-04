@@ -4,14 +4,14 @@ import './index.scss'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 // import { Router } from 'react-router';
-import createHashHistory from 'history/createHashHistory';
-import { BrowserRouter, browserHistory } from 'react-router-dom';
+// import createHashHistory from 'history/createHashHistory';
+import { BrowserRouter} from 'react-router-dom';
 
 
-const browserHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
+// const browserHistory = createBrowserHistory({ basename: process.env.PUBLIC_URL });
 
 ReactDOM.render(
-  <BrowserRouter history={browserHistory}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>, 
   document.getElementById('root'))
