@@ -23,7 +23,7 @@ const MovieItemDetails = (props) => {
                   editing={false}
                   starCount={5}
                   value={Math.round(movieDetails.vote_average / 2)} />
-                <h3 className='item-details-hero-genre'>{movieDetails.genres[0].name} |  {movieDetails.genres[1].name} </h3>
+                <h3 className='item-details-hero-genre'>{movieDetails.genres[0].name} </h3>
               </div>
             </div>
           </header>
