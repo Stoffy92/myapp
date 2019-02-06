@@ -247,7 +247,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 .search-results-name,
 .search-results-title {
-  align-self: baseline;
+  display: flex;
   text-align: center;
   color: $text-color;
   padding-top: 15px;
