@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.10.11",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "node-sass": "^4.10.0",
     "nuka-carousel": "^4.4.3",
     "pure-react-carousel": "^1.17.0",
